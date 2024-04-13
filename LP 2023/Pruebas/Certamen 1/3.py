@@ -3,8 +3,13 @@ n=int(input())
 
 
 sum=0
+resto=0
 for i in range (n):
     temp=int(input())
-    sum+=temp
+    current=temp+resto
+    if(current>=k):
+        resto=current-k
+    else:
+        resto=0
 
-print(sum-(n*k))
+print(resto)

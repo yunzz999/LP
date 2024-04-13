@@ -8,7 +8,6 @@ def lista_n(n,l,l1):
     return r
 
 
-
 s=input()
 w=input()
 n=int(input())
