@@ -10,6 +10,7 @@ def valid_n(n):
 
 t=""
 sum=0
+jeep=0
 while(True):
     t=input()
     t=valid_t(t)
@@ -19,7 +20,9 @@ while(True):
     n=valid_n(n)
     if(t=="ENTRADA"):
         sum+=n
+        jeep+=1
     elif(t=="SALIDA"):
         sum=sum-n
+        jeep=jeep-1
 
-print(sum)
+print(sum,jeep)

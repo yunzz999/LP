@@ -14,9 +14,12 @@ for i in range(n):
     lx.append(float(t[0]))
     ly.append(float(t[1]))
 
-sum=distancia(lx[0],ly[0],lx[n-1],ly[n-1])
+sum=distancia(lx[0],ly[0],lx[n-1],ly[n-1]) 
+# toma la distancia del primer al ultimo
+
+
 for i in range(n):
     if(i+1<n):
-        sum+=distancia(lx[i],ly[i],lx[i+1],ly[i+1])
+        sum+=distancia(lx[i],ly[i],lx[i+1],ly[i+1]) #toma las distancias de los consecutivos
 
 print(sum)
