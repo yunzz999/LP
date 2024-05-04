@@ -15,4 +15,3 @@ for i in range(n):
         v=r 
     print(v)
 
-##yep
