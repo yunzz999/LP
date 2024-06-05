@@ -24,3 +24,4 @@ def main():
         print("Las",c,"latas se pueden apilar en",int(nt),"filas")
 
 main()
+

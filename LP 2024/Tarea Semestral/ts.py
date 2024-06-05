@@ -1,4 +1,10 @@
 import random
+from collections import Counter #
+
+def elemento_mas_repetido(l): #funcion para encontrar el elemento mas repetido de una lista 
+    contador = Counter(l)
+    elemento, _ = contador.most_common(1)[0]
+    return elemento
 
 def lista_n(n,l,l1):
     r=[]
@@ -8,6 +14,7 @@ def lista_n(n,l,l1):
     return r
 
 
+## Input
 s=input() #toma el texto "grande"
 w=input() #toma la palabra 
 n=int(input()) #toma el numero de palabras en las que fijarse
@@ -27,6 +34,7 @@ for i in l: #Recorro cada frase
 
 fw=w
 for i in range(1,n):
-    fw+=" "+random.choice(lista_n(i,pw,num))
-
+    fw+=" "+elemento_mas_repetido(lista_n(i,pw,num))
 print(fw)
+
+#Faltan Nombres
