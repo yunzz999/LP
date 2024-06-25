@@ -6,6 +6,13 @@ def elemento_mas_repetido(l): #funcion para encontrar el elemento mas repetido d
     elemento, _ = contador.most_common(1)[0]
     return elemento
 
+def limpiar (l):
+    words=[',','.']
+    for i in range(len(l)):
+        for j in range(len(l[i])):
+            if(l[i][j] in words):
+                l[i]=l[i].replace(l[i][j],"")
+
 def lista_n(n,l,l1):
     r=[]
     for i in range(len(l1)):
@@ -34,7 +41,8 @@ for i in l: #Recorro cada frase
 
 fw=w
 for i in range(1,n):
-    fw+=" "+elemento_mas_repetido(lista_n(i,pw,num))
+    ls=lista_n(i,pw,num)
+    ls=limpiar(ls)
+    fw+=" "+elemento_mas_repetido(ls)
 print(fw)
-
 #Faltan Nombres
