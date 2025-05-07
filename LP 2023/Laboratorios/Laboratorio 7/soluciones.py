@@ -27,10 +27,16 @@
 #print(sum(c1),sum(c2))
 
 #Ejercicio 4 (v1)
-P=[]
-max=float("-inf")
-for i in range(16):
-    temp=input()
-    if float(temp) > max:
-        max=float(temp)
-print(max)
+#P=[]
+#max=float("-inf")
+#for i in range(16):
+    #temp=input()
+    #if float(temp) > max:
+    # #max=float(temp)
+#print(max)
+
+
+l=[33,1,334]
+ord=sorted(l)
+l.remove(l.index(ord[0]))
+print(l)
